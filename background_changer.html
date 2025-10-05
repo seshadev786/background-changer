@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>BACKGROUND COLOR CHANGER</title>
+</head>
+<body id="my_body">
+    <style>
+        /* #my_body{height:100vh;
+            width:100vw;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justifdy-content:center;
+        }
+
+        .container{width:50%;
+            background-color:blue;
+             display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            padding:30px;
+            border-radius:5px;
+
+        }
+
+        h2{text-align:center;}
+
+        button{width:100%;
+            margin:4px;
+            padding:5px;
+            background:rgb(85,83,83);
+            color:white;
+            border:none;
+            border-radius:4px;
+        }
+
+        button:hover{background:white;
+            color:black;
+        }
+
+        button:focus{outline:none;
+            transform:scale(1.05);
+            background-color:white;
+            color:black;
+
+        } 
+    </style>*/
+    <div class="container">
+    <h2>BACKGROUND COLOR CHANGER</h2>
+    <button id="btnRed">Red</button>
+    <button id="btnYellow">Yellow</button>
+    <button id="btnBlue">Blue</button>
+    <button id="btnGreen">Green</button>
+    <button id="btnReset">Reset</button></div>
+    
+    <script>
+        let my_body=document.querySelector("#my_body");
+my_body.style.background="green";
+let btnRed=document.querySelector("#btnRed");
+let btnYellow=document.querySelector("#btnYellow");
+let btnBlue=document.querySelector("#btnBlue");
+let btnGreen=document.querySelector("#btnGreen");
+let btnReset=document.querySelector("#btnReset");
+
+btnRed.addEventListener('click',function(){my_body.style.background="red"
+
+});
+btnYellow.addEventListener('click',function(){my_body.style.background="yellow"
+
+});
+btnBlue.addEventListener('click',function(){my_body.style.background="blue"
+
+});
+btnGreen.addEventListener('click',function(){my_body.style.background="green"
+
+});
+btnReset.addEventListener('click',function(){my_body.style.background="white"
+
+});
+
+    </script>
+    
+    
+</body>
+</html>
